@@ -15,7 +15,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "babel src -d lib",
-    "prebuild":"jest",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
