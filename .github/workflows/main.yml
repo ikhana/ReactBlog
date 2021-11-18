@@ -31,4 +31,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge 
     - name:  Run surge
-      run: surge ./build InaamBlg.surge.sh --token ${{ secrets.REACT_BLOG }}
+      run: surge ./ build InaamBlg.surge.sh --token ${{ secrets.REACT_BLOG }}
