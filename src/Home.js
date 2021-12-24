@@ -2,7 +2,7 @@ import BlogList from "./Bloglist";
 import useFetch from "./useFetch";
 
 const Home = () => {
-   const {data: blogs, loading, error} = useFetch('http://localhost:8000/blogs')
+   const {data: blogs, loading, error} = useFetch('https://reactblogsites.netlify.app/blogs')
 
     return ( 
         <div className='Home'>

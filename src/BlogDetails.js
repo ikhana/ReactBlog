@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const {data: blog, loading, error} = useFetch('http://localhost:8000/blogs/' + id)
+    const {data: blog, loading, error} = useFetch('https://reactblogsites.netlify.app/blogs/' + id)
     const goThroughHistory = useNavigate();
 
     const handleDelete=() => {
        
        
-        fetch('http://localhost:8000/blogs/' +blog.id, {
+        fetch('https://reactblogsites.netlify.app/blogs/' +blog.id, {
       method: 'DELETE',
     }).then(() => {
       console.log('blog deleted');
